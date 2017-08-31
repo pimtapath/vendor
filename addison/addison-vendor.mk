@@ -119,8 +119,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/hw/fingerprint.msm8953.so:system/lib/hw/fingerprint.msm8953.so \
     vendor/motorola/addison/proprietary/lib/hw/sensorhub.msm8953.so:system/lib/hw/sensorhub.msm8953.so \
     vendor/motorola/addison/proprietary/lib/hw/sensors.addison.so:system/lib/hw/sensors.addison.so \
-    vendor/motorola/addison/proprietary/lib/hw/sensors.iio.so:system/lib/hw/sensors.iio.so \
-    vendor/motorola/addison/proprietary/lib/hw/sensors.msm8953.so:system/lib/hw/sensors.msm8953.so \
     vendor/motorola/addison/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
     vendor/motorola/addison/proprietary/lib/lib_motsensorlistener.so:system/lib/lib_motsensorlistener.so \
     vendor/motorola/addison/proprietary/lib/lib_mottof.so:system/lib/lib_mottof.so \
@@ -131,7 +129,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/libcamerabgprocservice.so:system/lib/libcamerabgprocservice.so \
     vendor/motorola/addison/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
     vendor/motorola/addison/proprietary/lib/libfamily_photo.so:system/lib/libfamily_photo.so \
-    vendor/motorola/addison/proprietary/lib/libiio.so:system/lib/libiio.so \
     vendor/motorola/addison/proprietary/lib/libjscore.so:system/lib/libjscore.so \
     vendor/motorola/addison/proprietary/lib/libjustshoot.so:system/lib/libjustshoot.so \
     vendor/motorola/addison/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
@@ -152,6 +149,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/libqmimotext.so:system/lib/libqmimotext.so \
     vendor/motorola/addison/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/motorola/addison/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
+    vendor/motorola/addison/proprietary/lib/sensors.msm8953.so:system/lib/sensors.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/motorola/addison/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/motorola/addison/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
