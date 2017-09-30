@@ -135,6 +135,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/motorola/addison/proprietary/lib/libmbs.so:system/lib/libmbs.so \
     vendor/motorola/addison/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
+    vendor/motorola/addison/proprietary/lib/libmemalloc.so:system/lib/libmemalloc.so \
     vendor/motorola/addison/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/motorola/addison/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/motorola/addison/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
