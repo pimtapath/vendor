@@ -500,7 +500,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     datastatusnotification \
     CNEService \
-    QtiTetherService \
     com.qualcomm.location \
     qcrilmsgtunnel \
     colorservice \
