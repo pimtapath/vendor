@@ -498,7 +498,6 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     TimeService \
     datastatusnotification \
-    CNEService \
     com.qualcomm.location \
     qcrilmsgtunnel \
     colorservice \
