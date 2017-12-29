@@ -91,7 +91,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/motorola/addison/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/motorola/addison/proprietary/etc/lowi.conf:system/etc/lowi.conf \
-    vendor/motorola/addison/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/motorola/addison/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/motorola/addison/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/motorola/addison/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
@@ -171,6 +170,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/motorola/addison/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
     vendor/motorola/addison/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
+    vendor/motorola/addison/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:system/vendor/lib/com.quicinc.cne.api@1.0.so \
+    vendor/motorola/addison/proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so:system/vendor/lib/com.quicinc.cne.constants@1.0.so \
+    vendor/motorola/addison/proprietary/vendor/lib/com.quicinc.cne.constants@2.0.so:system/vendor/lib/com.quicinc.cne.constants@2.0.so \
+    vendor/motorola/addison/proprietary/vendor/lib/com.quicinc.cne.server@1.0.so:system/vendor/lib/com.quicinc.cne.server@1.0.so \
+    vendor/motorola/addison/proprietary/vendor/lib/com.quicinc.cne.server@2.0.so:system/vendor/lib/com.quicinc.cne.server@2.0.so \
     vendor/motorola/addison/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/motorola/addison/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/motorola/addison/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -279,6 +283,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libchromatix_ov5693_snapshot_3a.so:system/vendor/lib/libchromatix_ov5693_snapshot_3a.so \
     vendor/motorola/addison/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/motorola/addison/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libcneoplookup.so:system/vendor/lib/libcneoplookup.so \
     vendor/motorola/addison/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/motorola/addison/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/motorola/addison/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so \
@@ -488,7 +493,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
     vendor/motorola/addison/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/motorola/addison/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/motorola/addison/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
     vendor/motorola/addison/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/motorola/addison/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
@@ -509,6 +513,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/rfsa/adsp/libscveTextReco_skel.so:system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so \
     vendor/motorola/addison/proprietary/vendor/lib/vendor.display.color@1.0_vendor.so:system/vendor/lib/vendor.display.color@1.0_vendor.so \
     vendor/motorola/addison/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:system/vendor/lib64/com.quicinc.cne.api@1.0.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so:system/vendor/lib64/com.quicinc.cne.constants@1.0.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/com.quicinc.cne.constants@2.0.so:system/vendor/lib64/com.quicinc.cne.constants@2.0.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/com.quicinc.cne.server@1.0.so:system/vendor/lib64/com.quicinc.cne.server@1.0.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/com.quicinc.cne.server@2.0.so:system/vendor/lib64/com.quicinc.cne.server@2.0.so \
     vendor/motorola/addison/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
     vendor/motorola/addison/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
     vendor/motorola/addison/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
@@ -579,6 +588,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib64/libc2d30_bltlib.so:system/vendor/lib64/libc2d30_bltlib.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/libcneoplookup.so:system/vendor/lib64/libcneoplookup.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
@@ -681,7 +691,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib64/libtime_genoff.so:system/vendor/lib64/libtime_genoff.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libtinyxml2_1.so:system/vendor/lib64/libtinyxml2_1.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
-    vendor/motorola/addison/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
@@ -701,12 +710,12 @@ PRODUCT_PACKAGES += \
     colorservice \
     ims \
     imssettings \
-    ConnectivityExt \
     QtiTelephonyServicelibrary \
     cneapiclient \
     com.qti.location.sdk \
     com.qti.snapdragon.sdk.display \
     com.qualcomm.location.vzw_library \
+    com.quicinc.cne.api-V1.0-java \
     com.quicinc.cne \
     imscmlibrary \
     izat.xt.srv \
