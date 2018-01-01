@@ -149,9 +149,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/motorola/addison/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
     vendor/motorola/addison/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
-    vendor/motorola/addison/proprietary/lib64/hw/sensorhub.msm8953.so:system/lib64/hw/sensorhub.msm8953.so \
-    vendor/motorola/addison/proprietary/lib64/hw/sensors.addison.so:system/lib64/hw/sensors.addison.so \
-    vendor/motorola/addison/proprietary/lib64/sensors.msm8953.so:system/lib64/sensors.msm8953.so \
     vendor/motorola/addison/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/motorola/addison/proprietary/lib64/libadropbox.so:system/lib64/libadropbox.so \
     vendor/motorola/addison/proprietary/lib64/libadspd.so:system/lib64/libadspd.so \
