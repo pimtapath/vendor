@@ -698,6 +698,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:system/vendor/lib64/mediadrm/libwvdrmengine.so \
     vendor/motorola/addison/proprietary/vendor/lib64/vendor.display.color@1.0_vendor.so:system/vendor/lib64/vendor.display.color@1.0_vendor.so \
     vendor/motorola/addison/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
