@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/motorola/addison/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/motorola/addison/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/motorola/addison/proprietary/bin/motosh:system/bin/motosh \
     vendor/motorola/addison/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/motorola/addison/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/motorola/addison/proprietary/bin/pm-service:system/bin/pm-service \
@@ -84,7 +83,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/etc/firmware/marley-dsp1-ultrasound.wmfw:system/etc/firmware/marley-dsp1-ultrasound.wmfw \
     vendor/motorola/addison/proprietary/etc/firmware/marley-dsp2-aov-frontend.wmfw:system/etc/firmware/marley-dsp2-aov-frontend.wmfw \
     vendor/motorola/addison/proprietary/etc/firmware/marley-dsp3-aov-control.wmfw:system/etc/firmware/marley-dsp3-aov-control.wmfw \
-    vendor/motorola/addison/proprietary/etc/firmware/sensorhubfw.bin:system/etc/firmware/sensorhubfw.bin \
     vendor/motorola/addison/proprietary/etc/firmware/synaptics-s3508-16082601-255c40-addison.tdat:system/etc/firmware/synaptics-s3508-16082601-255c40-addison.tdat \
     vendor/motorola/addison/proprietary/etc/firmware/synaptics-s3508sga-16082601-255c40-addison.tdat:system/etc/firmware/synaptics-s3508sga-16082601-255c40-addison.tdat \
     vendor/motorola/addison/proprietary/etc/flp.conf:system/etc/flp.conf \
@@ -113,9 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/hw/camera.msm8953.so:system/lib/hw/camera.msm8953.so \
     vendor/motorola/addison/proprietary/lib/hw/camera.rc.so:system/lib/hw/camera.rc.so \
     vendor/motorola/addison/proprietary/lib/hw/fingerprint.msm8953.so:system/lib/hw/fingerprint.msm8953.so \
-    vendor/motorola/addison/proprietary/lib/hw/sensorhub.msm8953.so:system/lib/hw/sensorhub.msm8953.so \
-    vendor/motorola/addison/proprietary/lib/hw/sensors.addison.so:system/lib/hw/sensors.addison.so \
-    vendor/motorola/addison/proprietary/lib/sensors.msm8953.so:system/lib/sensors.msm8953.so \
     vendor/motorola/addison/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
     vendor/motorola/addison/proprietary/lib/lib_motsensorlistener.so:system/lib/lib_motsensorlistener.so \
     vendor/motorola/addison/proprietary/lib/lib_mottof.so:system/lib/lib_mottof.so \
@@ -148,7 +143,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/motorola/addison/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/motorola/addison/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
-    vendor/motorola/addison/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
     vendor/motorola/addison/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/motorola/addison/proprietary/lib64/libadropbox.so:system/lib64/libadropbox.so \
     vendor/motorola/addison/proprietary/lib64/libadspd.so:system/lib64/libadspd.so \
@@ -160,11 +154,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib64/libqmimotext.so:system/lib64/libqmimotext.so \
     vendor/motorola/addison/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/motorola/addison/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
-    vendor/motorola/addison/proprietary/lib64/libsensorhub.so:system/lib64/libsensorhub.so \
+    vendor/motorola/addison/proprietary/vendor/bin/motosh:system/vendor/bin/motosh \
     vendor/motorola/addison/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/motorola/addison/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/motorola/addison/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/motorola/addison/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/motorola/addison/proprietary/vendor/etc/firmware/sensorhubfw.bin:system/vendor/etc/firmware/sensorhubfw.bin \
     vendor/motorola/addison/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
     vendor/motorola/addison/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     vendor/motorola/addison/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:system/vendor/lib/com.quicinc.cne.api@1.0.so \
@@ -183,6 +178,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/gatekeeper.msm8953.so:system/vendor/lib/hw/gatekeeper.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/keystore.msm8953.so:system/vendor/lib/hw/keystore.msm8953.so \
+    vendor/motorola/addison/proprietary/vendor/lib/hw/sensorhub.msm8953.so:system/vendor/lib/hw/sensorhub.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/vulkan.msm8953.so:system/vendor/lib/hw/vulkan.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
     vendor/motorola/addison/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
@@ -477,6 +473,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     vendor/motorola/addison/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/motorola/addison/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libsensorhub.so:system/vendor/lib/libsensorhub.so \
     vendor/motorola/addison/proprietary/vendor/lib/libsensorhubservice_jni.so:system/vendor/lib/libsensorhubservice_jni.so \
     vendor/motorola/addison/proprietary/vendor/lib/libsettings.so:system/vendor/lib/libsettings.so \
     vendor/motorola/addison/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
@@ -508,6 +505,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:system/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/motorola/addison/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:system/vendor/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/motorola/addison/proprietary/vendor/lib/rfsa/adsp/libscveTextReco_skel.so:system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so \
+    vendor/motorola/addison/proprietary/vendor/lib/sensors.msm8953.so:system/vendor/lib/sensors.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/vendor.display.color@1.0_vendor.so:system/vendor/lib/vendor.display.color@1.0_vendor.so \
     vendor/motorola/addison/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     vendor/motorola/addison/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:system/vendor/lib64/com.quicinc.cne.api@1.0.so \
@@ -677,6 +675,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib64/libsdmextension.so:system/vendor/lib64/libsdmextension.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/libsensorhub.so:system/vendor/lib64/libsensorhub.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libsensorhubservice_jni.so:system/vendor/lib64/libsensorhubservice_jni.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
