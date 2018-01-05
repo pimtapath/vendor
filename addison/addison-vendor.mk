@@ -25,7 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/motorola/addison/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/motorola/addison/proprietary/bin/loc_launcher:system/bin/loc_launcher \
-    vendor/motorola/addison/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/motorola/addison/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/motorola/addison/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/motorola/addison/proprietary/bin/pm-service:system/bin/pm-service \
@@ -108,9 +107,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
     vendor/motorola/addison/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/motorola/addison/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
-    vendor/motorola/addison/proprietary/lib/hw/camera.msm8953.so:system/lib/hw/camera.msm8953.so \
-    vendor/motorola/addison/proprietary/lib/hw/camera.rc.so:system/lib/hw/camera.rc.so \
     vendor/motorola/addison/proprietary/lib/hw/fingerprint.msm8953.so:system/lib/hw/fingerprint.msm8953.so \
+    vendor/motorola/addison/proprietary/lib/com.motorola.mod@1.0.so:system/lib/com.motorola.mod@1.0.so \
+    vendor/motorola/addison/proprietary/lib/libYuvSkia.so:system/lib/libYuvSkia.so \
     vendor/motorola/addison/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
     vendor/motorola/addison/proprietary/lib/lib_motsensorlistener.so:system/lib/lib_motsensorlistener.so \
     vendor/motorola/addison/proprietary/lib/lib_mottof.so:system/lib/lib_mottof.so \
@@ -118,7 +117,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/libadspd.so:system/lib/libadspd.so \
     vendor/motorola/addison/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/addison/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
-    vendor/motorola/addison/proprietary/lib/libcamerabgprocservice.so:system/lib/libcamerabgprocservice.so \
     vendor/motorola/addison/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
     vendor/motorola/addison/proprietary/lib/libfamily_photo.so:system/lib/libfamily_photo.so \
     vendor/motorola/addison/proprietary/lib/libjscore.so:system/lib/libjscore.so \
@@ -127,22 +125,17 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/motorola/addison/proprietary/lib/libmbs.so:system/lib/libmbs.so \
     vendor/motorola/addison/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
-    vendor/motorola/addison/proprietary/lib/libmemalloc.so:system/lib/libmemalloc.so \
-    vendor/motorola/addison/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
-    vendor/motorola/addison/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
-    vendor/motorola/addison/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
-    vendor/motorola/addison/proprietary/lib/libmodmanager.so:system/lib/libmodmanager.so \
     vendor/motorola/addison/proprietary/lib/libmorpho_image_stabilizer4.so:system/lib/libmorpho_image_stabilizer4.so \
     vendor/motorola/addison/proprietary/lib/libmot-qc-fd-offline.so:system/lib/libmot-qc-fd-offline.so \
-    vendor/motorola/addison/proprietary/lib/libmot_afd.so:system/lib/libmot_afd.so \
     vendor/motorola/addison/proprietary/lib/libmot_lux_standardization.so:system/lib/libmot_lux_standardization.so \
     vendor/motorola/addison/proprietary/lib/libmotext_inf.so:system/lib/libmotext_inf.so \
-    vendor/motorola/addison/proprietary/lib/libmotimager_utils.so:system/lib/libmotimager_utils.so \
     vendor/motorola/addison/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/motorola/addison/proprietary/lib/libqmimotext.so:system/lib/libqmimotext.so \
-    vendor/motorola/addison/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/motorola/addison/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/motorola/addison/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
+    vendor/motorola/addison/proprietary/lib/motorola.hardware.camera.device@1.0.so:system/lib/motorola.hardware.camera.device@1.0.so \
+    vendor/motorola/addison/proprietary/lib/motorola.hardware.camera.provider@2.4.so:system/lib/motorola.hardware.camera.provider@2.4.so \
+    vendor/motorola/addison/proprietary/lib/motorola.hardware.mods_camera.provider@2.4.so:system/lib/motorola.hardware.mods_camera.provider@2.4.so \
     vendor/motorola/addison/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/motorola/addison/proprietary/lib64/libadropbox.so:system/lib64/libadropbox.so \
     vendor/motorola/addison/proprietary/lib64/libadspd.so:system/lib64/libadspd.so \
@@ -154,12 +147,17 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib64/libqmimotext.so:system/lib64/libqmimotext.so \
     vendor/motorola/addison/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/motorola/addison/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
+    vendor/motorola/addison/proprietary/vendor/bin/hw/motorola.hardware.camera.provider@2.4-service:system/vendor/bin/hw/motorola.hardware.camera.provider@2.4-service \
+    vendor/motorola/addison/proprietary/vendor/bin/hw/motorola.hardware.mods_camera.provider@2.4-service:system/vendor/bin/hw/motorola.hardware.mods_camera.provider@2.4-service \
+    vendor/motorola/addison/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
     vendor/motorola/addison/proprietary/vendor/bin/motosh:system/vendor/bin/motosh \
     vendor/motorola/addison/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/motorola/addison/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/motorola/addison/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/motorola/addison/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/motorola/addison/proprietary/vendor/etc/firmware/sensorhubfw.bin:system/vendor/etc/firmware/sensorhubfw.bin \
+    vendor/motorola/addison/proprietary/vendor/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc:system/vendor/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc \
+    vendor/motorola/addison/proprietary/vendor/etc/init/motorola.hardware.mods_camera.provider@2.4-service.rc:system/vendor/etc/init/motorola.hardware.mods_camera.provider@2.4-service.rc \
     vendor/motorola/addison/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
     vendor/motorola/addison/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     vendor/motorola/addison/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:system/vendor/lib/com.quicinc.cne.api@1.0.so \
@@ -175,9 +173,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/motorola/addison/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
+    vendor/motorola/addison/proprietary/vendor/lib/hw/camera.msm8953.so:system/vendor/lib/hw/camera.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/gatekeeper.msm8953.so:system/vendor/lib/hw/gatekeeper.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/keystore.msm8953.so:system/vendor/lib/hw/keystore.msm8953.so \
+    vendor/motorola/addison/proprietary/vendor/lib/hw/libcamera_mods_legacy_hal.so:system/vendor/lib/hw/libcamera_mods_legacy_hal.so \
+    vendor/motorola/addison/proprietary/vendor/lib/hw/motorola.hardware.camera.provider@2.4-impl.so:system/vendor/lib/hw/motorola.hardware.camera.provider@2.4-impl.so \
+    vendor/motorola/addison/proprietary/vendor/lib/hw/motorola.hardware.mods_camera.provider@2.4-impl.so:system/vendor/lib/hw/motorola.hardware.mods_camera.provider@2.4-impl.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/sensorhub.msm8953.so:system/vendor/lib/hw/sensorhub.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/vulkan.msm8953.so:system/vendor/lib/hw/vulkan.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
@@ -237,6 +239,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/motorola/addison/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
     vendor/motorola/addison/proprietary/vendor/lib/libcamerabgproc-jni.so:system/vendor/lib/libcamerabgproc-jni.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libcamerabgprocservice.so:system/vendor/lib/libcamerabgprocservice.so \
     vendor/motorola/addison/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
     vendor/motorola/addison/proprietary/vendor/lib/libchromatix_ov16860_4k_ihdr_video_3a.so:system/vendor/lib/libchromatix_ov16860_4k_ihdr_video_3a.so \
     vendor/motorola/addison/proprietary/vendor/lib/libchromatix_ov16860_4k_video_3a.so:system/vendor/lib/libchromatix_ov16860_4k_video_3a.so \
@@ -305,7 +308,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/motorola/addison/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/motorola/addison/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libllvd_smore.so:system/vendor/lib/libllvd_smore.so \
     vendor/motorola/addison/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/motorola/addison/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/motorola/addison/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
@@ -318,6 +320,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmdsprpc.so:system/vendor/lib/libmdsprpc.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libmm-qcamera.so:system/vendor/lib/libmm-qcamera.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera2_dcrf.so:system/vendor/lib/libmmcamera2_dcrf.so \
@@ -333,7 +336,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_cac3_lib.so:system/vendor/lib/libmmcamera_cac3_lib.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_dbg.so:system/vendor/lib/libmmcamera_dbg.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_dcrf_lib.so:system/vendor/lib/libmmcamera_dcrf_lib.so \
@@ -345,6 +347,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_interface.so:system/vendor/lib/libmmcamera_interface.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_isp_abf40.so:system/vendor/lib/libmmcamera_isp_abf40.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_isp_bcc40.so:system/vendor/lib/libmmcamera_isp_bcc40.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_isp_be_stats44.so:system/vendor/lib/libmmcamera_isp_be_stats44.so \
@@ -391,7 +394,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_ppeiscore.so:system/vendor/lib/libmmcamera_ppeiscore.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:system/vendor/lib/libmmcamera_sw2d_lib.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
@@ -401,13 +403,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:system/vendor/lib/libmmcamera_ubifocus_lib.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmcamera_vstab_module.so:system/vendor/lib/libmmcamera_vstab_module.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libmmsw_detail_enhancement.so:system/vendor/lib/libmmsw_detail_enhancement.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libmmsw_math.so:system/vendor/lib/libmmsw_math.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libmmsw_opencl.so:system/vendor/lib/libmmsw_opencl.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libmmsw_platform.so:system/vendor/lib/libmmsw_platform.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libmodmanager.so:system/vendor/lib/libmodmanager.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libmot_afd.so:system/vendor/lib/libmot_afd.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmot_gpu_mapper.so:system/vendor/lib/libmot_gpu_mapper.so \
     vendor/motorola/addison/proprietary/vendor/lib/libmotocalibration.so:system/vendor/lib/libmotocalibration.so \
     vendor/motorola/addison/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
@@ -427,6 +428,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/motorola/addison/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/motorola/addison/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libqomx_core.so:system/vendor/lib/libqomx_core.so \
     vendor/motorola/addison/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/motorola/addison/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/motorola/addison/proprietary/vendor/lib/libqti-iop-client.so:system/vendor/lib/libqti-iop-client.so \
@@ -485,6 +487,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
     vendor/motorola/addison/proprietary/vendor/lib/libtinyxml2_1.so:system/vendor/lib/libtinyxml2_1.so \
     vendor/motorola/addison/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
     vendor/motorola/addison/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/motorola/addison/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/motorola/addison/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
@@ -495,6 +499,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/motorola/addison/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/motorola/addison/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/motorola/addison/proprietary/vendor/lib/motcamera.device@1.0-impl.so:system/vendor/lib/motcamera.device@1.0-impl.so \
+    vendor/motorola/addison/proprietary/vendor/lib/motorola.hardware.camera.device@1.0_vendor.so:system/vendor/lib/motorola.hardware.camera.device@1.0_vendor.so \
+    vendor/motorola/addison/proprietary/vendor/lib/motorola.hardware.camera.provider@2.4_vendor.so:system/vendor/lib/motorola.hardware.camera.provider@2.4_vendor.so \
     vendor/motorola/addison/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/motorola/addison/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/motorola/addison/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
