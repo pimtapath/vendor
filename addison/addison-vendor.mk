@@ -55,11 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/motorola/addison/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/motorola/addison/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/motorola/addison/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    vendor/motorola/addison/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Argentina.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Argentina.bin \
-    vendor/motorola/addison/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin \
-    vendor/motorola/addison/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin \
-    vendor/motorola/addison/proprietary/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
     vendor/motorola/addison/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/motorola/addison/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/motorola/addison/proprietary/lib/com.motorola.mod@1.0.so:system/lib/com.motorola.mod@1.0.so \
@@ -112,6 +107,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/etc/firmware/sensorhubfw.bin:system/vendor/etc/firmware/sensorhubfw.bin \
     vendor/motorola/addison/proprietary/vendor/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc:system/vendor/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc \
     vendor/motorola/addison/proprietary/vendor/etc/init/motorola.hardware.mods_camera.provider@2.4-service.rc:system/vendor/etc/init/motorola.hardware.mods_camera.provider@2.4-service.rc \
+    vendor/motorola/addison/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    vendor/motorola/addison/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Argentina.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Argentina.bin \
+    vendor/motorola/addison/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin \
+    vendor/motorola/addison/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin \
+    vendor/motorola/addison/proprietary/vendor/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:system/vendor/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
     vendor/motorola/addison/proprietary/vendor/firmware/a530_gpmu.fw2:system/vendor/firmware/a530_gpmu.fw2 \
     vendor/motorola/addison/proprietary/vendor/firmware/a530_pfp.fw:system/vendor/firmware/a530_pfp.fw \
     vendor/motorola/addison/proprietary/vendor/firmware/a530_pm4.fw:system/vendor/firmware/a530_pm4.fw \
