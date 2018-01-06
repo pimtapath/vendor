@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/etc/acdbdata/Hdmi_cal.acdb:system/etc/acdbdata/Hdmi_cal.acdb \
     vendor/motorola/addison/proprietary/etc/acdbdata/Headset_cal.acdb:system/etc/acdbdata/Headset_cal.acdb \
     vendor/motorola/addison/proprietary/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
-    vendor/motorola/addison/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
     vendor/motorola/addison/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/motorola/addison/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/motorola/addison/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
@@ -39,14 +38,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/etc/firmware/marley-dsp3-aov-control.wmfw:system/etc/firmware/marley-dsp3-aov-control.wmfw \
     vendor/motorola/addison/proprietary/etc/firmware/synaptics-s3508-16082601-255c40-addison.tdat:system/etc/firmware/synaptics-s3508-16082601-255c40-addison.tdat \
     vendor/motorola/addison/proprietary/etc/firmware/synaptics-s3508sga-16082601-255c40-addison.tdat:system/etc/firmware/synaptics-s3508sga-16082601-255c40-addison.tdat \
-    vendor/motorola/addison/proprietary/etc/flp.conf:system/etc/flp.conf \
-    vendor/motorola/addison/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/motorola/addison/proprietary/etc/izat.conf:system/etc/izat.conf \
-    vendor/motorola/addison/proprietary/etc/lowi.conf:system/etc/lowi.conf \
     vendor/motorola/addison/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/motorola/addison/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/motorola/addison/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
-    vendor/motorola/addison/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
     vendor/motorola/addison/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/motorola/addison/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/motorola/addison/proprietary/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
@@ -54,9 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/motorola/addison/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/motorola/addison/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
-    vendor/motorola/addison/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/motorola/addison/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
-    vendor/motorola/addison/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/motorola/addison/proprietary/lib/com.motorola.mod@1.0.so:system/lib/com.motorola.mod@1.0.so \
     vendor/motorola/addison/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
     vendor/motorola/addison/proprietary/lib/lib_motsensorlistener.so:system/lib/lib_motsensorlistener.so \
@@ -69,8 +60,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/libfamily_photo.so:system/lib/libfamily_photo.so \
     vendor/motorola/addison/proprietary/lib/libjscore.so:system/lib/libjscore.so \
     vendor/motorola/addison/proprietary/lib/libjustshoot.so:system/lib/libjustshoot.so \
-    vendor/motorola/addison/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/motorola/addison/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+    vendor/motorola/addison/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
     vendor/motorola/addison/proprietary/lib/libmbs.so:system/lib/libmbs.so \
     vendor/motorola/addison/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/addison/proprietary/lib/libmorpho_image_stabilizer4.so:system/lib/libmorpho_image_stabilizer4.so \
@@ -81,12 +71,15 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib/libqmimotext.so:system/lib/libqmimotext.so \
     vendor/motorola/addison/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/motorola/addison/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
+    vendor/motorola/addison/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
     vendor/motorola/addison/proprietary/lib/motorola.hardware.camera.device@1.0.so:system/lib/motorola.hardware.camera.device@1.0.so \
     vendor/motorola/addison/proprietary/lib/motorola.hardware.camera.provider@2.4.so:system/lib/motorola.hardware.camera.provider@2.4.so \
     vendor/motorola/addison/proprietary/lib/motorola.hardware.mods_camera.provider@2.4.so:system/lib/motorola.hardware.mods_camera.provider@2.4.so \
+    vendor/motorola/addison/proprietary/lib/vendor.qti.gnss@1.0.so:system/lib/vendor.qti.gnss@1.0.so \
     vendor/motorola/addison/proprietary/vendor/bin/hw/motorola.hardware.camera.provider@2.4-service:system/vendor/bin/hw/motorola.hardware.camera.provider@2.4-service \
     vendor/motorola/addison/proprietary/vendor/bin/hw/motorola.hardware.mods_camera.provider@2.4-service:system/vendor/bin/hw/motorola.hardware.mods_camera.provider@2.4-service \
     vendor/motorola/addison/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
+    vendor/motorola/addison/proprietary/vendor/etc/cacert_location.pem:system/vendor/etc/cacert_location.pem \
     vendor/motorola/addison/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:system/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/motorola/addison/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:system/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml \
     vendor/motorola/addison/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:system/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml \
@@ -104,13 +97,20 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml \
     vendor/motorola/addison/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml \
     vendor/motorola/addison/proprietary/vendor/etc/firmware/sensorhubfw.bin:system/vendor/etc/firmware/sensorhubfw.bin \
+    vendor/motorola/addison/proprietary/vendor/etc/flp.conf:system/vendor/etc/flp.conf \
+    vendor/motorola/addison/proprietary/vendor/etc/gps.conf:system/vendor/etc/gps.conf \
     vendor/motorola/addison/proprietary/vendor/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc:system/vendor/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc \
     vendor/motorola/addison/proprietary/vendor/etc/init/motorola.hardware.mods_camera.provider@2.4-service.rc:system/vendor/etc/init/motorola.hardware.mods_camera.provider@2.4-service.rc \
+    vendor/motorola/addison/proprietary/vendor/etc/izat.conf:system/vendor/etc/izat.conf \
+    vendor/motorola/addison/proprietary/vendor/etc/lowi.conf:system/vendor/etc/lowi.conf \
+    vendor/motorola/addison/proprietary/vendor/etc/sap.conf:system/vendor/etc/sap.conf \
     vendor/motorola/addison/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/motorola/addison/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Argentina.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Argentina.bin \
     vendor/motorola/addison/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Brazil.bin \
     vendor/motorola/addison/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_India.bin \
     vendor/motorola/addison/proprietary/vendor/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:system/vendor/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
+    vendor/motorola/addison/proprietary/vendor/etc/xtra_root_cert.pem:system/vendor/etc/xtra_root_cert.pem \
+    vendor/motorola/addison/proprietary/vendor/etc/xtwifi.conf:system/vendor/etc/xtwifi.conf \
     vendor/motorola/addison/proprietary/vendor/firmware/a530_gpmu.fw2:system/vendor/firmware/a530_gpmu.fw2 \
     vendor/motorola/addison/proprietary/vendor/firmware/a530_pfp.fw:system/vendor/firmware/a530_pfp.fw \
     vendor/motorola/addison/proprietary/vendor/firmware/a530_pm4.fw:system/vendor/firmware/a530_pm4.fw \
@@ -136,7 +136,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/camera.msm8953.so:system/vendor/lib/hw/camera.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/fingerprint.msm8953.so:system/vendor/lib/hw/fingerprint.msm8953.so \
-    vendor/motorola/addison/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/gatekeeper.msm8953.so:system/vendor/lib/hw/gatekeeper.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/keystore.msm8953.so:system/vendor/lib/hw/keystore.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/libcamera_mods_legacy_hal.so:system/vendor/lib/hw/libcamera_mods_legacy_hal.so \
@@ -144,6 +143,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/hw/motorola.hardware.mods_camera.provider@2.4-impl.so:system/vendor/lib/hw/motorola.hardware.mods_camera.provider@2.4-impl.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/sensorhub.msm8953.so:system/vendor/lib/hw/sensorhub.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/thermal.msm8953.so:system/vendor/lib/hw/thermal.msm8953.so \
+    vendor/motorola/addison/proprietary/vendor/lib/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib/hw/vendor.qti.gnss@1.0-impl.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/vulkan.msm8953.so:system/vendor/lib/hw/vulkan.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
     vendor/motorola/addison/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
@@ -193,9 +193,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/motorola/addison/proprietary/vendor/lib/libaptXHD_encoder.so:system/vendor/lib/libaptXHD_encoder.so \
     vendor/motorola/addison/proprietary/vendor/lib/libaptX_encoder.so:system/vendor/lib/libaptX_encoder.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libasn1cper.so:system/vendor/lib/libasn1cper.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libasn1crt.so:system/vendor/lib/libasn1crt.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libasn1crtx.so:system/vendor/lib/libasn1crtx.so \
     vendor/motorola/addison/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/motorola/addison/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/motorola/addison/proprietary/vendor/lib/libbson.so:system/vendor/lib/libbson.so \
@@ -275,7 +272,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/motorola/addison/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/motorola/addison/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libloc_api_v02.so:system/vendor/lib/libloc_api_v02.so \
+    vendor/motorola/addison/proprietary/vendor/lib/libloc_ds_api.so:system/vendor/lib/libloc_ds_api.so \
     vendor/motorola/addison/proprietary/vendor/lib/libloc_externalDr.so:system/vendor/lib/libloc_externalDr.so \
     vendor/motorola/addison/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/motorola/addison/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
@@ -442,7 +440,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/motorola/addison/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/motorola/addison/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/motorola/addison/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/motorola/addison/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/motorola/addison/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
@@ -462,6 +459,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/sensors.msm8953.so:system/vendor/lib/sensors.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/vendor.display.color@1.0_vendor.so:system/vendor/lib/vendor.display.color@1.0_vendor.so \
     vendor/motorola/addison/proprietary/vendor/lib/vendor.display.postproc@1.0_vendor.so:system/vendor/lib/vendor.display.postproc@1.0_vendor.so \
+    vendor/motorola/addison/proprietary/vendor/lib/vendor.qti.gnss@1.0_vendor.so:system/vendor/lib/vendor.qti.gnss@1.0_vendor.so \
     vendor/motorola/addison/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
@@ -477,7 +475,6 @@ PRODUCT_PACKAGES += \
     cneapiclient \
     com.qti.location.sdk \
     com.qti.snapdragon.sdk.display \
-    com.qualcomm.location.vzw_library \
     com.quicinc.cne.api-V1.0-java \
     com.quicinc.cne \
     imscmlibrary \
@@ -491,7 +488,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/motorola/addison/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/motorola/addison/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/motorola/addison/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/motorola/addison/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/motorola/addison/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/motorola/addison/proprietary/bin/pm-service:system/bin/pm-service \
@@ -501,26 +497,31 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/addison/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/motorola/addison/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/motorola/addison/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
-    vendor/motorola/addison/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/motorola/addison/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/motorola/addison/proprietary/lib64/libadropbox.so:system/lib64/libadropbox.so \
     vendor/motorola/addison/proprietary/lib64/libadspd.so:system/lib64/libadspd.so \
     vendor/motorola/addison/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
-    vendor/motorola/addison/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
-    vendor/motorola/addison/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
+    vendor/motorola/addison/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/motorola/addison/proprietary/lib64/libmdmcutback.so:system/lib64/libmdmcutback.so \
     vendor/motorola/addison/proprietary/lib64/libmotext_inf.so:system/lib64/libmotext_inf.so \
     vendor/motorola/addison/proprietary/lib64/libqmimotext.so:system/lib64/libqmimotext.so \
     vendor/motorola/addison/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/motorola/addison/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
+    vendor/motorola/addison/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
+    vendor/motorola/addison/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
     vendor/motorola/addison/proprietary/vendor/bin/cnd:system/vendor/bin/cnd \
     vendor/motorola/addison/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:system/vendor/bin/hw/vendor.display.color@1.0-service \
+    vendor/motorola/addison/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:system/vendor/bin/hw/vendor.qti.gnss@1.0-service \
+    vendor/motorola/addison/proprietary/vendor/bin/loc_launcher:system/vendor/bin/loc_launcher \
     vendor/motorola/addison/proprietary/vendor/bin/motosh:system/vendor/bin/motosh \
     vendor/motorola/addison/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/motorola/addison/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/motorola/addison/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/motorola/addison/proprietary/vendor/bin/xtra-daemon:system/vendor/bin/xtra-daemon \
+    vendor/motorola/addison/proprietary/vendor/bin/xtwifi-client:system/vendor/bin/xtwifi-client \
+    vendor/motorola/addison/proprietary/vendor/bin/xtwifi-inet-agent:system/vendor/bin/xtwifi-inet-agent \
     vendor/motorola/addison/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:system/vendor/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/motorola/addison/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:system/vendor/etc/init/vendor.qti.gnss@1.0-service.rc \
     vendor/motorola/addison/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
     vendor/motorola/addison/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:system/vendor/lib64/com.quicinc.cne.api@1.0.so \
     vendor/motorola/addison/proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so:system/vendor/lib64/com.quicinc.cne.constants@1.0.so \
@@ -536,10 +537,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib64/egl/libq3dtools_esx.so:system/vendor/lib64/egl/libq3dtools_esx.so \
     vendor/motorola/addison/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/motorola/addison/proprietary/vendor/lib64/hw/fingerprint.msm8953.so:system/vendor/lib64/hw/fingerprint.msm8953.so \
-    vendor/motorola/addison/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
     vendor/motorola/addison/proprietary/vendor/lib64/hw/gatekeeper.msm8953.so:system/vendor/lib64/hw/gatekeeper.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib64/hw/keystore.msm8953.so:system/vendor/lib64/hw/keystore.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib64/hw/thermal.msm8953.so:system/vendor/lib64/hw/thermal.msm8953.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so \
     vendor/motorola/addison/proprietary/vendor/lib64/hw/vulkan.msm8953.so:system/vendor/lib64/hw/vulkan.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
     vendor/motorola/addison/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
@@ -588,9 +589,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libaptXHD_encoder.so:system/vendor/lib64/libaptXHD_encoder.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libaptX_encoder.so:system/vendor/lib64/libaptX_encoder.so \
-    vendor/motorola/addison/proprietary/vendor/lib64/libasn1cper.so:system/vendor/lib64/libasn1cper.so \
-    vendor/motorola/addison/proprietary/vendor/lib64/libasn1crt.so:system/vendor/lib64/libasn1crt.so \
-    vendor/motorola/addison/proprietary/vendor/lib64/libasn1crtx.so:system/vendor/lib64/libasn1crtx.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
@@ -623,7 +621,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
-    vendor/motorola/addison/proprietary/vendor/lib64/libloc_ext.so:system/vendor/lib64/libloc_ext.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/libloc_api_v02.so:system/vendor/lib64/libloc_api_v02.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/libloc_ds_api.so:system/vendor/lib64/libloc_ds_api.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libloc_externalDr.so:system/vendor/lib64/libloc_externalDr.so \
     vendor/motorola/addison/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/motorola/addison/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
@@ -689,9 +688,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
-    vendor/motorola/addison/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
     vendor/motorola/addison/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:system/vendor/lib64/mediadrm/libwvdrmengine.so \
     vendor/motorola/addison/proprietary/vendor/lib64/vendor.display.color@1.0_vendor.so:system/vendor/lib64/vendor.display.color@1.0_vendor.so \
-    vendor/motorola/addison/proprietary/vendor/lib64/vendor.display.postproc@1.0_vendor.so:system/vendor/lib64/vendor.display.postproc@1.0_vendor.so
+    vendor/motorola/addison/proprietary/vendor/lib64/vendor.display.postproc@1.0_vendor.so:system/vendor/lib64/vendor.display.postproc@1.0_vendor.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/vendor.qti.gnss@1.0_vendor.so:system/vendor/lib64/vendor.qti.gnss@1.0_vendor.so
