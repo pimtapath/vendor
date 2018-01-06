@@ -144,6 +144,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/hw/motorola.hardware.camera.provider@2.4-impl.so:system/vendor/lib/hw/motorola.hardware.camera.provider@2.4-impl.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/motorola.hardware.mods_camera.provider@2.4-impl.so:system/vendor/lib/hw/motorola.hardware.mods_camera.provider@2.4-impl.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/sensorhub.msm8953.so:system/vendor/lib/hw/sensorhub.msm8953.so \
+    vendor/motorola/addison/proprietary/vendor/lib/hw/thermal.msm8953.so:system/vendor/lib/hw/thermal.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/vulkan.msm8953.so:system/vendor/lib/hw/vulkan.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
     vendor/motorola/addison/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
@@ -545,6 +546,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
     vendor/motorola/addison/proprietary/vendor/lib64/hw/gatekeeper.msm8953.so:system/vendor/lib64/hw/gatekeeper.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib64/hw/keystore.msm8953.so:system/vendor/lib64/hw/keystore.msm8953.so \
+    vendor/motorola/addison/proprietary/vendor/lib64/hw/thermal.msm8953.so:system/vendor/lib64/hw/thermal.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib64/hw/vulkan.msm8953.so:system/vendor/lib64/hw/vulkan.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
     vendor/motorola/addison/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
