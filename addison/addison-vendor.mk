@@ -143,7 +143,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/hw/libcamera_mods_legacy_hal.so:system/vendor/lib/hw/libcamera_mods_legacy_hal.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/motorola.hardware.camera.provider@2.4-impl.so:system/vendor/lib/hw/motorola.hardware.camera.provider@2.4-impl.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/motorola.hardware.mods_camera.provider@2.4-impl.so:system/vendor/lib/hw/motorola.hardware.mods_camera.provider@2.4-impl.so \
-    vendor/motorola/addison/proprietary/vendor/lib/hw/sensorhub.msm8953.so:system/vendor/lib/hw/sensorhub.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/thermal.msm8953.so:system/vendor/lib/hw/thermal.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/hw/vulkan.msm8953.so:system/vendor/lib/hw/vulkan.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
@@ -420,9 +419,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/libsdmextension.so:system/vendor/lib/libsdmextension.so \
     vendor/motorola/addison/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     vendor/motorola/addison/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libsensorhub.so:system/vendor/lib/libsensorhub.so \
-    vendor/motorola/addison/proprietary/vendor/lib/libsensorhubservice_jni.so:system/vendor/lib/libsensorhubservice_jni.so \
     vendor/motorola/addison/proprietary/vendor/lib/libsettings.so:system/vendor/lib/libsettings.so \
     vendor/motorola/addison/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/motorola/addison/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
@@ -458,7 +454,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:system/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/motorola/addison/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:system/vendor/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/motorola/addison/proprietary/vendor/lib/rfsa/adsp/libscveTextReco_skel.so:system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so \
-    vendor/motorola/addison/proprietary/vendor/lib/sensors.msm8953.so:system/vendor/lib/sensors.msm8953.so \
     vendor/motorola/addison/proprietary/vendor/lib/vendor.display.color@1.0_vendor.so:system/vendor/lib/vendor.display.color@1.0_vendor.so \
     vendor/motorola/addison/proprietary/vendor/lib/vendor.display.postproc@1.0_vendor.so:system/vendor/lib/vendor.display.postproc@1.0_vendor.so \
     vendor/motorola/addison/proprietary/vendor/qcril.db:system/vendor/qcril.db
@@ -515,7 +510,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/motorola/addison/proprietary/vendor/bin/cnd:system/vendor/bin/cnd \
     vendor/motorola/addison/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:system/vendor/bin/hw/vendor.display.color@1.0-service \
-    vendor/motorola/addison/proprietary/vendor/bin/motosh:system/vendor/bin/motosh \
     vendor/motorola/addison/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/motorola/addison/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/motorola/addison/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
@@ -671,9 +665,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/lib64/libsdm-disp-vndapis.so:system/vendor/lib64/libsdm-disp-vndapis.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libsdmextension.so:system/vendor/lib64/libsdmextension.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
-    vendor/motorola/addison/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
-    vendor/motorola/addison/proprietary/vendor/lib64/libsensorhub.so:system/vendor/lib64/libsensorhub.so \
-    vendor/motorola/addison/proprietary/vendor/lib64/libsensorhubservice_jni.so:system/vendor/lib64/libsensorhubservice_jni.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
     vendor/motorola/addison/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
