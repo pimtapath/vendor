@@ -58,7 +58,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/motorola/addison/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
     vendor/motorola/addison/proprietary/lib/com.motorola.mod@1.0.so:system/lib/com.motorola.mod@1.0.so \
-    vendor/motorola/addison/proprietary/lib/libYuvSkia.so:system/lib/libYuvSkia.so \
     vendor/motorola/addison/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
     vendor/motorola/addison/proprietary/lib/lib_motsensorlistener.so:system/lib/lib_motsensorlistener.so \
     vendor/motorola/addison/proprietary/lib/lib_mottof.so:system/lib/lib_mottof.so \
