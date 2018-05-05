@@ -42,6 +42,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/motorola/addison/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/motorola/addison/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
+    vendor/motorola/addison/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:system/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
+    vendor/motorola/addison/proprietary/etc/permissions/privapp-permissions-com.qualcomm.qcrilmsgtunnel.xml:system/etc/permissions/privapp-permissions-com.qualcomm.qcrilmsgtunnel.xml \
     vendor/motorola/addison/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/motorola/addison/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/motorola/addison/proprietary/lib/com.motorola.mod@1.0.so:system/lib/com.motorola.mod@1.0.so \
@@ -456,19 +458,22 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
+    QtiTelephonyService \
     ims \
     imssettings \
     com.qualcomm.location \
     qcrilmsgtunnel \
     TimeService \
     colorservice \
+    QtiTelephonyServicelibrary \
     cneapiclient \
     com.qti.location.sdk \
     com.qti.snapdragon.sdk.display \
     com.quicinc.cne.api-V1.0-java \
     com.quicinc.cne \
     izat.xt.srv \
-    qcrilhook
+    qcrilhook \
+    qti-telephony-common
 PRODUCT_COPY_FILES += \
     vendor/motorola/addison/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/motorola/addison/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
