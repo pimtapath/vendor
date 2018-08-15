@@ -459,17 +459,14 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     QtiTelephonyService \
-    com.qualcomm.location \
     qcrilmsgtunnel \
     TimeService \
     colorservice \
     QtiTelephonyServicelibrary \
     cneapiclient \
-    com.qti.location.sdk \
     com.qti.snapdragon.sdk.display \
     com.quicinc.cne.api-V1.0-java \
     com.quicinc.cne \
-    izat.xt.srv \
     qcrilhook \
     qti-telephony-common
 PRODUCT_COPY_FILES += \
