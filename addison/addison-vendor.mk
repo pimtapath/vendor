@@ -462,6 +462,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     QtiTelephonyService \
+    ims \
     qcrilmsgtunnel \
     TimeService \
     colorservice \
